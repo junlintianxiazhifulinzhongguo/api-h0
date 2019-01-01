@@ -42,6 +42,11 @@ router.get('/', (ctx, next) => {
   ctx.body = { state }
 })
 
+router.get('/api/auhRedirect', (ctx, next) => {
+  ctx.body = '支付宝zhifubao' 
+})
+
+
 routes(router)
 app.on('error', function(err, ctx) {
   console.log(err)
