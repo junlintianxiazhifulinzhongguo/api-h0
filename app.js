@@ -44,7 +44,8 @@ router.get('/', (ctx, next) => {
 
 router.post('/api/auhRedirect', (ctx, next) => {
   ctx.body = {
-    auth_url
+    auth_url,
+    code:'200'
   } 
 })
 
