@@ -40,7 +40,7 @@ router.get('/', (ctx, next) => {
     title: 'Koa2'
   }
   ctx.body = { state }
-}).get('/api/a', (ctx, next) => {
+}).get('api/a', (ctx, next) => {
   console.log(111)
  // console.log(ctx.query)
 })
