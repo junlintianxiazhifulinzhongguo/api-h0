@@ -42,11 +42,15 @@ router.get('/', (ctx, next) => {
   ctx.body = { state }
 })
 
-router.post('/api/auhRedirect', (ctx, next) => {
+router.post('/api/authUrl', (ctx, next) => {
   ctx.body = {
     auth_url,
     code:'200'
   } 
+})
+
+router.get('/api/auhRedirect', (ctx, next) => {
+  console.log(ctx.query)
 })
 
 
