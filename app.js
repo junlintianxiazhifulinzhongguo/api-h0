@@ -51,7 +51,7 @@ router.post('/api/authUrl', (ctx, next) => {
 
 router.get('/api/auhRedirect', (ctx, next) => {
   console.log(111)
-  console.log(ctx.query)
+ // console.log(ctx.query)
 })
 
 
