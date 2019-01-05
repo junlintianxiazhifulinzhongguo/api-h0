@@ -40,6 +40,9 @@ router.get('/', (ctx, next) => {
     title: 'Koa2'
   }
   ctx.body = { state }
+}).get('/api/a', (ctx, next) => {
+  console.log(111)
+ // console.log(ctx.query)
 })
 
 router.post('/api/authUrl', (ctx, next) => {
@@ -48,13 +51,6 @@ router.post('/api/authUrl', (ctx, next) => {
     code:'200'
   } 
 })
-
-router.get('/api/auhRedirect', (ctx, next) => {
-  console.log(111)
- // console.log(ctx.query)
-})
-
-
 routes(router)
 app.on('error', function(err, ctx) {
   console.log(err)
